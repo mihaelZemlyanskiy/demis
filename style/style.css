@@ -1,0 +1,113 @@
+body{
+	background-color: #f8f8f3;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	font-family: RobotoBold,sans-serif;
+}
+form{
+	background-color: white;
+	font-size: 28px;
+	padding: 20px;
+	border: 4px solid #6e0609;
+}
+form div{
+	margin: 10px;
+	display: grid;
+	grid-template-columns: 2fr 400px;
+}
+form div input{
+	font-size: 25px;
+}
+span~input{
+	border:2px solid #6e0609;		
+	padding: 3px;
+}
+input::placeholder{
+	color:#BCB3B3;
+}
+.inputError{
+	background-color: #FEAAAA;
+}
+#sub{
+	display: block;
+	text-align: center;
+	
+}
+#sub>input{
+	padding: 10px;
+	font-size: 20px;
+	font-family: RobotoBold,sans-serif;
+	background-color: #be1116;
+	color: white;
+	border: 2px solid #be1116;
+}
+#sub>input:hover{
+	background-color: white;
+	color: #be1116;
+}
+table{
+	width: 100%;
+	background-color: #6e0609;
+}
+th, td{
+	padding: 5px;
+}
+th{
+	background-color: #be1116;
+	color: white;
+}
+td{
+	background-color: white;
+	color: #3d4b53;
+}
+
+@media (max-width: 1023px){
+	body{
+		display:block;
+		margin: 0px;
+		}
+		body>div{
+			width: 100%;
+
+		}
+	form{
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	form div{
+		font-size: 30px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		margin: 5px;
+	}
+	form div input{
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	}
+	#sub>input{
+	font-size:25px ;
+	}
+
+}
+
+@media (max-width: 795px){
+	form div input{
+		font-size: 18px;
+	}
+	table{
+		display: block;
+		position: relative;
+		overflow: scroll;
+	}
+}
