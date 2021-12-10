@@ -78,7 +78,6 @@ for(let field of fields){
 
 sub.addEventListener('click',runAjaxForm);
 $(function(){
-  //2. Получить элемент, к которому необходимо добавить маску
   $("input[type='tel']").mask("8(999) 999-9999");
 });
 $('.clearmessage').click(function(){$('.messageForm>div').fadeOut(100)});
