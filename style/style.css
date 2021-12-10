@@ -6,6 +6,51 @@ body{
 	align-items: center;
 	font-family: RobotoBold,sans-serif;
 }
+.messageForm{
+	
+	display: flex;
+	justify-content: center;
+}
+.messageForm>div{
+	position: absolute;
+	display: none;
+}
+.formError{
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 55px;
+	position: relative;
+	background-color: white;
+	border: 4px solid #6e0609;
+	font-size: 20px;
+	padding: 25px;
+}
+
+.clearmessage{
+	padding: 5px;
+	display: inline;
+	background-color: #be1116;
+	color: white;
+	border: 2px solid #be1116;
+	cursor: pointer;
+}
+.clearmessage:hover{
+	background-color: white;
+	color: #be1116;
+}
+.messageError{
+	z-index: 1;
+	position: absolute;
+	color: #94090d;
+	font-size: 15px;
+	margin-left: 150px;
+	margin-top: 10px;
+	display: none1;
+}
+
 form{
 	background-color: white;
 	font-size: 28px;
@@ -21,14 +66,19 @@ form div input{
 	font-size: 25px;
 }
 span~input{
-	border:2px solid #6e0609;		
+	background-color: #eeeee7;
+	border:2px solid white/*#6e0609*/;		
 	padding: 3px;
+}
+span~input:focus{
+	background-color: #ffffff;
 }
 input::placeholder{
 	color:#BCB3B3;
 }
 .inputError{
-	background-color: #FEAAAA;
+	/*background-color: #FEAAAA;*/
+	border-color: #6e0609;
 }
 #sub{
 	display: block;
@@ -62,7 +112,6 @@ td{
 	background-color: white;
 	color: #3d4b53;
 }
-
 @media (max-width: 1023px){
 	body{
 		display:block;
@@ -98,9 +147,12 @@ td{
 	#sub>input{
 	font-size:25px ;
 	}
+	.formError{
+		font-size: 30px;
+		top: ;
+	}
 
 }
-
 @media (max-width: 795px){
 	form div input{
 		font-size: 18px;
@@ -110,4 +162,11 @@ td{
 		position: relative;
 		overflow: scroll;
 	}
+	.formError{
+		font-size: 25px;
+		top: 250px;
+	}
+}
+.none{
+	display: none;
 }
