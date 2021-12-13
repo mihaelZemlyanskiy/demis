@@ -23,7 +23,7 @@ mysqli_query($connect, "INSERT INTO `tabletest`(`fullname`,`address`,`phone`,`ma
 
 if (isset($fullname) && isset($address) && isset($phone) && isset($mail)) { 
 
-
+	// Формируем массив для JSON ответа
     $result = array(
 
     	'fullname' => $fullname,
